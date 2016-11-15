@@ -4,7 +4,9 @@
 public class SomeClass {
 
     public static void main(String []args){
-        System.out.println("First Gradle Project");
+        System.out.println("First");
+        System.out.println("Gradle");
+        System.out.println("Project");
     }
 
 }
