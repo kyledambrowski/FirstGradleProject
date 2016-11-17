@@ -1,9 +1,14 @@
-group 'SecondProject'
+group 'GradleProject'
 version '1.0-SNAPSHOT'
 
 apply plugin: 'java'
 
 /*sourceCompatibility = 1.5*/
+project.ext{
+    cucumberVersion = '1.2.5'
+    junitVersion = '4.12'
+}
+
 
 repositories {
     mavenCentral()
@@ -11,7 +16,7 @@ repositories {
 
 
 dependencies {
-    testCompile 'junit:junit:4.12'
-    testCompile 'info.cukes:cucumber-java:1.2.5'
-    testCompile 'info.cukes:cucumber-junit:1.2.5'
+    testCompile 'junit:junit:' + junitVersion
+    testCompile 'info.cukes:cucumber-java:' + cucumberVersion
+    testCompile 'info.cukes:cucumber-junit:' + cucumberVersion
 }
